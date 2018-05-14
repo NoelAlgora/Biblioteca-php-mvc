@@ -94,7 +94,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `last_name`, `email`, `user_type`, `password`) VALUES
-(1, 'Noel', 'Igual', 'noelalgora@lignumcap.com', 0, 'a');
+(1, 'Usuario', 'Uno', 'a@b.com', 0, 'a');
 
 --
 -- Índices para tablas volcadas
