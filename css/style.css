@@ -1,0 +1,242 @@
+/* *{
+  margin:0;
+  padding: 0;
+} */
+
+body {
+  background-color: white;
+}
+
+header {
+  height: 11%;
+  background-color: black;
+}
+.font_header{
+  font-family: Impact;
+  font-size: 23px;
+  color: white;
+}
+header div.saludo {
+  width: 100%;
+  font-family: Impact;
+  text-align: right;
+  font-size: 15px;
+  color: white;
+}
+
+footer {
+  background-color: lightgreen;
+  position: fixed;
+  bottom:0;
+  height: 5%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  height: 15px;
+}
+
+.font_log{
+  font-family: Impact;
+  color: #000000;
+  text-align: center;
+}
+
+#img_alquiler{
+  max-height: 250px;
+  max-width: 250px;
+  float: left;
+}
+
+#tabla_inicio{
+  text-align: center;
+  width: 100%;
+}
+
+.fondo {
+  background-image: url('../img/fondo.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.listado_vehiculos{
+  height: auto;
+  width: 65%;
+  border: 3px solid #000000;
+}
+
+.font_info{
+  font-family: Impact;
+}
+
+.login{
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 20%;
+  height: 40%;
+  border: 3px solid #000000;
+  padding: 30px;
+  background-color: #F17357;
+}
+
+#contenido {
+  flex-basis: 80%;
+}
+
+#container {
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  min-height: 80%;
+}
+
+#logo_header{
+  float: left;
+}
+
+/* cambia a lo especificado si los pixeles de la pantalla no superan 640px, por si queremos
+meter mas elementos en el container*/
+
+@media all and (max-width: 640px) {
+  #container {
+    flex-flow: column;
+  }
+  #contenido {
+    order: 1;
+  }
+  #sidebar-right {
+    order: 2;
+  }
+  .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    margin: auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+textarea.descripcion{
+  height: 50px;
+}
+
+.container_register{
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 60%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.container_login{
+  margin: auto;
+  margin-top: 11%;
+  margin-bottom: 11%;
+  width: 30%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.col-25 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form_error_span {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+.title
+{
+  color: white;
+}
+
