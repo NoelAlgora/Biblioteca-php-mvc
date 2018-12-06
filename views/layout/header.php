@@ -2,16 +2,13 @@
   <div class="container">
     <h1 class="text-center title">BIBLIOTECA ABD</h1>
     <div class="saludo">
-      <?php
-        if ( $helper->isUserLogged() ){
-          echo "<p>Usuario: " . $helper->getLoggedUser()['name'] ."</p>";
-          echo "<p><a href=" . $helper->url('user','logout') .">Log out</a></p>";
-        }
-        else {
-          echo "<p>Usuario desconocido</p>";
-          echo "<p><a href=".$helper->url('user','login').">Login</a></p>";
-        }
-      ?>
+      <?php if ( $helper->isUserLogged() ): ?>
+        <p>Usuario: <?= $helper->getLoggedUser()['name']  ?></p>
+        <p><a href="<?= $helper->url('user','logout')?>">Log out</a></p>
+      <?php else: ?>
+        <p>Usuario desconocido</p>
+        <p><a href="<?=$helper->url('user','login')?>">Login</a></p>
+      <?php endif;?>
     </div>
   </div>
 </header>
